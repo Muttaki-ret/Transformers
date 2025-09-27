@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Characters - Transformers</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #000, #1a1a1a);
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    /* Include the Navbar CSS here */
+    .navbar {
+      background: #000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      box-shadow: 0 0 10px #f7d200;
+    }
+    .navbar .logo { color: #f7d200; font-weight: bold; font-size: 20px; }
+    .navbar .nav-links { list-style: none; display: flex; gap: 15px; margin: 0; padding: 0; }
+    .navbar .nav-links li a { color: white; text-decoration: none; font-weight: 500; }
+    .navbar .nav-links li a:hover { color: #f7d200; }
+
+    h1 {
+      text-align: center;
+      color: #f7d200;
+      margin-top: 20px;
+    }
+
+    .character-list {
+      display: flex;
+      flex-wrap:wrap ;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      width: 250px;
+      text-align: center;
+      padding: 10px;
+      box-shadow: 0 0 10px #f7d200;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      color: #f7d200;
+      margin: 10px 0 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">⚡ Transformers</div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="characters.html">Characters</a></li>
+        <li><a href="news.html">News & Updates</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="query.html">Query</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1>Characters List</h1>
+
+  <div class="character-list">
+    <div class="card">
+      <img src="prime.jpg" alt="Optimus">
+      <h3>Optimus Prime</h3>
+      <p>Leader of Autobots</p>
+    </div>
+
+    <div class="card">
+      <img src="megatron.jpg" alt="Megatron">
+      <h3>Megatron</h3>
+      <p>Leader of Decepticons</p>
+    </div>
+
+    <div class="card">
+      <img src="bumblebee.jpg" alt="Bumblebee">
+      <h3>Bumblebee</h3>
+      <p>Scout and brave warrior</p>
+    </div>
+  </div>
+
+</body>
+</html>

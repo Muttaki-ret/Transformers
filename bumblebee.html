@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bumblebee - Transformers</title>
+  <style>
+    body {
+      background: url('https://wallpapercave.com/wp/wp1912608.jpg') center/cover no-repeat;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      color: white;
+    }
+
+    /* 🌐 Navigation Bar */
+    .navbar {
+      background: #000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      box-shadow: 0 0 10px #f7d200;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    .navbar .logo {
+      color: #f7d200;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .navbar .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .navbar .nav-links li a:hover {
+      color: #f7d200;
+    }
+
+    /* 🌟 Character Section */
+    .character-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 120px 20px 40px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.5);
+      margin: 0 auto;
+    }
+
+    .character-container img {
+      width: 250px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #f7d200;
+      margin-bottom: 20px;
+    }
+
+    .character-container h1 {
+      color: #f7d200;
+      margin-bottom: 10px;
+    }
+
+    .character-container p {
+      max-width: 700px;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 15px;
+      background: #f7d200;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      box-shadow: 0 0 10px #f7d200;
+    }
+
+    .back-link:hover {
+      background: #ffea57;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🌐 Navigation Bar -->
+  <div class="navbar">
+    <div class="logo">Transformers</div>
+    <ul class="nav-links">
+      <li><a href="character-list.html">Character List</a></li>
+      <li><a href="news.html">News & Updates</a></li>
+      <li><a href="quiz.html">Quiz Game</a></li>
+      <li><a href="query.html">Query</a></li>
+    </ul>
+  </div>
+
+  <!-- 🐝 Bumblebee Section -->
+  <div class="character-container">
+    <img src="bumblebee.jpg" alt="Bumblebee">
+    <h1>Bumblebee</h1>
+    <p>
+      Bumblebee is one of the most beloved Autobots. Known for his bravery, loyalty, and speed, he serves as a scout and messenger for Optimus Prime.  
+      Despite losing his voice in battle, Bumblebee communicates through radio signals and music, making him a fan-favorite character.  
+      His yellow and black color scheme resembles a bee, and his alternate mode is typically a Chevrolet Camaro.
+    </p>
+    <a href="characters.html" class="back-link">⬅ Back to Character List</a>
+
+  </div>
+
+</body>
+</html>

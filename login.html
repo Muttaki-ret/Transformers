@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transformers Login</title>
+  <style>
+    body {
+      background: url('https://wallpapercave.com/wp/wp6624210.jpg') center/cover no-repeat;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: white;
+    }
+
+    /* 🌐 Navigation Bar */
+    .navbar {
+      background: #000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      box-shadow: 0 0 10px #f7d200;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    .navbar .logo {
+      color: #f7d200;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .navbar .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .navbar .nav-links li a:hover {
+      color: #f7d200;
+    }
+
+    .box {
+      background: rgba(0,0,0,0.7);
+      padding: 25px;
+      border-radius: 12px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 0 15px #f7d200;
+      margin-top: 100px; /* So the login box doesn't hide under navbar */
+    }
+
+    h1 { color: #f7d200; }
+
+    input {
+      width: 90%;
+      padding: 8px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 5px;
+      background: #222;
+      color: #fff;
+    }
+
+    button {
+      width: 95%;
+      padding: 10px;
+      background: #f7d200;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    a {
+      color: #f7d200;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <!-- 🌐 Navigation Bar -->
+  <div class="navbar">
+    <div class="logo">Transformers</div>
+    <ul class="nav-links">
+      <li><a href="character-list.html">Character List</a></li>
+      <li><a href="news.html">News & Updates</a></li>
+      <li><a href="quiz.html">Quiz Game</a></li>
+      <li><a href="query.html">Query</a></li>
+    </ul>
+  </div>
+
+  <!-- 🔐 Login Box -->
+  <div class="box">
+    <h1>Transformers Login</h1>
+    <form action="home.html" method="get">
+      <input type="text" placeholder="Login ID" required><br>
+      <input type="password" placeholder="Password (must include @)" required><br>
+      <button type="submit">Login</button>
+    </form>
+    <p><a href="register.html">Don't have an account? Register here</a></p>
+  </div>
+
+</body>
+</html>
